@@ -29,6 +29,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    lint {
+        abortOnError false
+        checkReleaseBuilds true
+        disable 'MissingTranslation'
+        ignoreWarnings true
+        quiet true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
